@@ -1,13 +1,14 @@
 import React from 'react';
 import './Header.css';
+import profilePicture from '../assets/profilePicture.jpeg'
 
 export default function Header() {
   return (
     <header className="Header">
       <img
         className="Header__profilePhoto"
-        src="https://via.placeholder.com/210"
-        alt="Profile"
+        src={profilePicture}
+        alt="Ymir"
       />
       <div className="Header__bio">
         <h1 className="Header__headline">
