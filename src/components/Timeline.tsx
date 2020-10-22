@@ -110,7 +110,7 @@ export default function Timeline() {
                   images, videos, presentations etc.
                 </li>
                 <li> UI to look through your files and manage them.</li>
-                <li> Interface within chat to send and search for files.</li>
+                <li> Interface within chat to send and search scroll through and send files.</li>
             </p>
           </div>
         </TimelineItem>

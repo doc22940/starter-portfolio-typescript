@@ -29,7 +29,7 @@
 .Technologies__button {
   border: none;
   padding: 1rem;
-  background-color: #008080;
+  background-color: var(--secondary);
   color: white;
   border-radius: 5px;
   max-width: 576px;
@@ -40,7 +40,7 @@
 }
 
 .Technologies__button:hover {
-  background-color: #009090;
+  background-color: var(--primary);
 }
 
 .Technology__list {
