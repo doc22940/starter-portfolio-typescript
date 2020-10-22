@@ -1,0 +1,56 @@
+.LinkBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style-type: none;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  background-color: #006060;
+}
+
+.LinkBar__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  padding-top: 0.5rem;
+  padding-right: 4rem;
+  padding-bottom: 0.5rem;
+  padding-left: 4rem;
+  
+  border-radius: 5px;
+  color: white;
+}
+
+.LinkBar__item--link {
+  text-decoration: none;
+}
+
+.LinkBar__item--image {
+  filter: invert(1);
+  margin-right: 10px;
+}
+
+.LinkBar__item:hover {
+  background-color: #00808079;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .LinkBar{
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,48 @@
+.TechnologyCard {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-top: 0.4rem;
+  margin-right: auto;
+  margin-bottom: 0.4rem;
+  margin-left: auto;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.TechnologyCard__name{
+  margin-left: 0.5rem;
+}
+
+.TechnologyCard__image{
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+}
+
+
+@media (max-width: 576px) {
+  .TechnologyCard {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-top: 0.4rem;
+    margin-right: auto;
+    margin-bottom: 0.4rem;
+    margin-left: auto;
+    border-radius: 5px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
