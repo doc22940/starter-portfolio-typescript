@@ -16,8 +16,8 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "lint": "eslint .",
-    "fix": "eslint . --fix",
+    "lint": "node_modules/.bin/eslint . --ext .js,.jsx,.ts,tsx",
+    "fix": "node_modules/.bin/eslint . --ext .js,.jsx,.ts,tsx --fix",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -10,16 +10,18 @@ export default function Footer() {
         to hire through &lt;Salt/&gt;
       </p>
       <p className="Footer__text">
-        If that sounds interesting contact{' '}
+        If that sounds interesting contact
+        {' '}
         <a
           className="Footer__link"
           href="mailto:richard.kallstrom@appliedtechnology.se"
         >
           Richard through email.
-        </a>{' '}
+        </a>
+        {' '}
       </p>
       <a className="Footer__link" href="https://salt.dev/">
-        <button className="Footer__button">
+        <button type="button" className="Footer__button">
           Learn more about &lt;Salt/&gt;
         </button>
       </a>

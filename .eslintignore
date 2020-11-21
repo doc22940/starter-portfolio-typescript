@@ -1,1 +1,4 @@
 build
+*test.tsx
+*test.ts
+serviceWorker.ts

@@ -1,4 +1,4 @@
-export const technologies = {
+const technologies = {
   languages: [
     {
       name: 'TypeScript',
@@ -11,7 +11,7 @@ export const technologies = {
         'https://raw.githubusercontent.com/tomchen/stack-icons/3d586ebac68a43c8358d030ee96c9e07afeff489/logos/javascript.svg',
     },
     {
-      name: 'Python ( learning )',
+      name: 'Python (learning)',
       imageUrl:
         'https://raw.githubusercontent.com/tomchen/stack-icons/3d586ebac68a43c8358d030ee96c9e07afeff489/logos/python.svg',
     },
@@ -26,6 +26,11 @@ export const technologies = {
       name: 'Redux',
       imageUrl:
         'https://raw.githubusercontent.com/tomchen/stack-icons/3d586ebac68a43c8358d030ee96c9e07afeff489/logos/redux.svg',
+    },
+    {
+      name: 'Angular - (basics)',
+      imageUrl:
+        'https://raw.githubusercontent.com/tomchen/stack-icons/3d586ebac68a43c8358d030ee96c9e07afeff489/logos/angular-icon.svg',
     },
     {
       name: 'Gatsby',
@@ -143,3 +148,5 @@ export const technologies = {
     },
   ],
 };
+
+export default technologies;

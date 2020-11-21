@@ -11,14 +11,21 @@ type TechnologyListProps = {
   array: technology[];
 };
 
-export default function TechnologyList({ heading, array }: TechnologyListProps) {
+export default function TechnologyList({
+  heading,
+  array,
+}: TechnologyListProps) {
   return (
     <div>
       <h3 className="Technologies__subhead">{heading}</h3>
       <div className="Technology__list">
-        {array.map(({ name, imageUrl }: technology, index) => {
-          return <TechnologyCard name={name} imageUrl={imageUrl} key={index} />;
-        })}
+        {array.map(({ name, imageUrl }: technology) => (
+          <TechnologyCard
+            name={name}
+            imageUrl={imageUrl}
+            key={name.toString()}
+          />
+        ))}
       </div>
     </div>
   );

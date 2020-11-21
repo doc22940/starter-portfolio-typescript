@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import profilePicture from '../assets/profilePicture.jpeg'
+import profilePicture from '../assets/profilePicture.jpeg';
 
 export default function Header() {
   return (
@@ -12,7 +12,8 @@ export default function Header() {
       />
       <div className="Header__bio">
         <h1 className="Header__headline">
-          Hey, I'm Ymir{' '}
+          Hey, I&apos;m Ymir
+          {' '}
           <span role="img" aria-label="wave-emoji">
             👋
           </span>
@@ -25,7 +26,8 @@ export default function Header() {
             else, so I started programming as much as possible.
           </p>
           <p>
-            This is around the time I heard about{' '}
+            This is around the time I heard about
+            {' '}
             <a className="Header__links" href="https://salt.dev/">
               School of Applied Technology
             </a>

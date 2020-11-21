@@ -39,7 +39,8 @@ export default function Timeline() {
       <div className="Timeline">
         <TimelineItem heading="Early 2020 - <Salt />">
           <p className="TimelineItem__text">
-            Quit working as a digital marketing consultant to join School of Applied Technology.
+            Quit working as a digital marketing consultant to join School of
+            Applied Technology.
           </p>
         </TimelineItem>
         <TimelineItem heading="Early 2020 - React todo" buttons={reactTodo}>
@@ -98,19 +99,26 @@ export default function Timeline() {
         <TimelineItem heading="Mid 2020 - Project for TrustLinc">
           <div className="TimelineItem__text">
             <p>
-              Did a short project for{' '}
-              <a href="https://www.trustlinc.com/">Trustlinc</a> where a team of
+              Did a short project for
+              {' '}
+              <a href="https://www.trustlinc.com/">Trustlinc</a>
+              {' '}
+              where a team of
               us developers from salt worked 2 1-week sprints to implement
               multimedia functionality to their chat application.
             </p>
             <p>
               This included:
-                <li>
-                  Drag-and-drop file upload to their file storage solution for
-                  images, videos, presentations etc.
-                </li>
-                <li> UI to look through your files and manage them.</li>
-                <li> Interface within chat to send and search scroll through and send files.</li>
+              <li>
+                Drag-and-drop file upload to their file storage solution for
+                images, videos, presentations etc.
+              </li>
+              <li> UI to look through your files and manage them.</li>
+              <li>
+                {' '}
+                Interface within chat to send and search scroll through and send
+                files.
+              </li>
             </p>
           </div>
         </TimelineItem>

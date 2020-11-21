@@ -3,9 +3,9 @@ import './Timeline.css';
 
 type TimeLineItem = {
   heading: string;
-  position?: string;
+  position: string;
   children: React.ReactChild;
-  buttons?: { text: string; url: string }[];
+  buttons: { text: string; url: string }[];
 };
 
 type ButtonProps = {
@@ -23,45 +23,53 @@ const Button: ({ position, text, url }: ButtonProps) => JSX.Element = ({
     return (
       <div className="TimelineItem__buttonContainer">
         <a href={url}>
-          <button className="TimelineItem__button">{text}</button>
-        </a>
-      </div>
-    );
-  } else if (position === 'left') {
-    return (
-      <div className="TimelineItem__buttonContainer TimelineItem__buttonContainer--leftCorner">
-        <a href={url}>
-          <button className="TimelineItem__button">{text}</button>
-        </a>
-      </div>
-    );
-  } else if (position === 'right') {
-    return (
-      <div className="TimelineItem__buttonContainer TimelineItem__buttonContainer--rightCorner">
-        <a href={url}>
-          <button className="TimelineItem__button">{text}</button>
-        </a>
-      </div>
-    );
-  } else {
-    return (
-      <div className="TimelineItem__buttonContainer TimelineItem__buttonContainer--leftCorner TimelineItem__buttonContainer--rightCorner">
-        <a href={url}>
-          <button className="TimelineItem__button">{text}</button>
+          <button type="button" className="TimelineItem__button">
+            {text}
+          </button>
         </a>
       </div>
     );
   }
+  if (position === 'left') {
+    return (
+      <div className="TimelineItem__buttonContainer TimelineItem__buttonContainer--leftCorner">
+        <a href={url}>
+          <button type="button" className="TimelineItem__button">
+            {text}
+          </button>
+        </a>
+      </div>
+    );
+  }
+  if (position === 'right') {
+    return (
+      <div className="TimelineItem__buttonContainer TimelineItem__buttonContainer--rightCorner">
+        <a href={url}>
+          <button type="button" className="TimelineItem__button">
+            {text}
+          </button>
+        </a>
+      </div>
+    );
+  }
+  return (
+    <div className="TimelineItem__buttonContainer TimelineItem__buttonContainer--leftCorner TimelineItem__buttonContainer--rightCorner">
+      <a href={url}>
+        <button type="button" className="TimelineItem__button">
+          {text}
+        </button>
+      </a>
+    </div>
+  );
 };
 
 export default function TimeLineItem({
   heading,
   children,
-  position = 'left',
   buttons = [],
 }: TimeLineItem) {
   return (
-    <div className={`TimelineItem__container  TimelineItem--left`}>
+    <div className="TimelineItem__container  TimelineItem--left">
       <div className="TimelineItem__content">
         <h2>{heading}</h2>
         {children}
@@ -89,14 +97,14 @@ export default function TimeLineItem({
 
           {buttons.length === 3
             ? buttons.map(({ text, url }, index) => {
-                if (index === 0) {
-                  return <Button position="left" text={text} url={url} />;
-                } else if (index === buttons.length - 1) {
-                  return <Button position="right" text={text} url={url} />;
-                } else {
-                  return <Button position="middle" text={text} url={url} />;
-                }
-              })
+              if (index === 0) {
+                return <Button position="left" text={text} url={url} />;
+              }
+              if (index === buttons.length - 1) {
+                return <Button position="right" text={text} url={url} />;
+              }
+              return <Button position="middle" text={text} url={url} />;
+            })
             : null}
         </div>
       ) : null}
